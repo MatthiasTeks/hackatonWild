@@ -1,0 +1,289 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+option {
+  color: #5A5A5A;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #F2F3EB;
+  max-width: 768px;
+  margin: 130px auto;
+  position: relative;
+  backdrop-filter: drop-shadow(8px 6px 7px black) blur(3px);
+  animation: appearBloc 1s forwards;
+}
+
+@keyframes appearBloc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  color: #F2F3EB;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #F2F3EB;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #F2F3EB;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #F2F3EB;
+	color: #F2F3EB;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #F2F3EB;
+}
+
+:-moz-placeholder { 
+	color: #F2F3EB;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #F2F3EB;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #F2F3EB;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #F2F3EB;
+  color: #F2F3EB;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #F2F3EB;
+  color: #F2F3EB;
+}
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #F2F3EB;
+  animation: alertValide 1s backwards;
+  display: none;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.logoAlert {
+  width: 25px;
+  color: green;
+}
+
+.logoAlert > svg {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.msgAlert {
+  font-family: 'Noto';
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.activeAlert {
+  display: flex !important;
+}
+
+@keyframes alertValide {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #container {
+    margin: 30px auto;
+    width: 95%;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+
+}

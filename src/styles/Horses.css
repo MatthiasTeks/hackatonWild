@@ -1,0 +1,66 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.slide img{
+    height: 250px;
+    width: 20rem;
+    margin: auto;
+}
+
+.slide {
+    transform: scale(0.7);
+    transition: transform 500ms;
+    opacity : 0.5;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sliderHorses {
+    background-color: rgb(10 10 10 / 65%);
+}
+
+.activeSlide {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.slide h1{
+    display: none;
+}
+
+.slide p {
+    display: none;
+}
+
+.activeSlide h1{
+    display: flex;
+    justify-content: center;
+}
+
+.activeSlide p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto';
+    color: #ece8e8;
+    font-size: 18px;
+}
+
+.sliderHorses {
+    margin-top: 200px;
+    animation: appearBloc 1s forwards;
+}
+
+.slide .stats {
+    display: none;
+}
+
+.activeSlide .stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.activeSlide .stats div {
+    display: flex;
+    justify-content: center;
+}
+

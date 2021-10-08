@@ -1,0 +1,143 @@
+/* ===== CALENDAR ===== */
+
+.calendar > * {
+  color: #A8B2B9;
+  font-family: 'Noto';
+}
+
+.wrapper {
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "sidebar"
+                         "content";
+    width: 100vw; 
+    height: 80vh;
+    animation: appearBloc 1s forwards;
+}
+  
+@media screen and (min-width: 850px) {
+  .wrapper {
+    grid-template-columns: 200px 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar content";
+  }
+}
+  
+main {
+  grid-area: content;
+  padding: 48px;
+}
+  
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+  
+.calendar__week,
+.calendar__header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);  
+}
+  
+.calendar__week {
+  grid-auto-rows: 100px;
+  text-align: right;
+}
+  
+.calendar__header {
+  grid-auto-rows: 50px;
+  align-items: center;
+  text-align: center;
+}
+  
+.calendar__day {
+  padding: 16px;
+}
+
+.calendar {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+}
+  
+.calendar__header > div {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+  
+.calendar__day {
+  border-right: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+}
+  
+.calendar__day > p {
+  text-align: center;
+  margin-top: 10px;
+}
+  
+.calendar__day:last-child {
+  border-right: 0;
+}
+
+.current-month {
+  color: #A8B2B9;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Noto';
+  padding: 8px;
+  text-transform: uppercase;
+  border-radius: 12px;
+  background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    top: 6%;  
+    right: 0%;
+    width: auto;
+  }
+  .calendar__header {
+    grid-auto-rows: 39px;
+  } 
+  .calendar__week {
+    grid-auto-rows: 83px;
+  }
+  main {
+    padding: 6px;
+  }
+  .calendar__header > div {
+    font-size: 10px;
+  }
+  .calendar__day > p {
+    font-size: 10px;
+  }
+  .calendar__day {
+    padding: 12px;
+  }
+  .toolbar {
+    justify-content: flex-end;
+  }
+}
+
+/* ===== EVENTS ===== */
+
+#jouteV {
+  background-color: rgb(110, 54, 54);
+  cursor: pointer;
+}
+
+#jouteC {
+  background-color: rgb(110, 54, 54);
+  cursor: pointer;
+}
+
+#party {
+  background-color: rgb(58, 110, 54);
+  cursor: pointer;
+}

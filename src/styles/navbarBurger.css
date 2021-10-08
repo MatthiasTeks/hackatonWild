@@ -1,0 +1,134 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .navbarBurger{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        min-height: 75px;
+        background-color: rgb(10 10 10 / 65%);
+        color: white;
+        z-index: 11;
+    }
+
+    .holderLogoBurger > img {
+        position: absolute; 
+        width: 85px;
+        height: 95px;
+        top: 12px;
+        left: 45px;
+        z-index: 13;
+        cursor: pointer;
+    }
+
+    .showNav .holderLogoBurger img{
+        display: none;
+    }
+
+    .showNav .holderLogoBurgerOn img{
+        width: 85px;
+    }
+
+    .navbarBurgerLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: -100vw;
+        bottom: 0;
+        height: 100vh;
+        padding: 2rem;
+        visibility: hidden;
+        z-index: 11;
+        background-color: rgb(10 10 10 / 100%);
+    }
+
+    .navbarBurgerItems::after{
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 10vw;
+        height: 1px;
+        background: white;
+    }
+
+    .navbarBurgerItems:last-child::after{
+        display: none;
+    }
+    .showNav .navbarBurgerLinks{
+        width: 100vw;
+        right:0;
+        visibility: visible;
+        
+    }
+    .navbarBurgerLink{
+        display: block;
+        padding: 1.5rem;
+        font-size: 5vw;
+        text-transform: uppercase;
+        color: inherit;
+    }
+    .navbarBurgerButton{
+        display: block;
+        top: 0rem;
+        right: 1rem;
+        position: fixed;
+        z-index: 12;
+        width: 40px;
+        height: 40px;
+        background:transparent;
+        border: none;
+        color: inherit;
+    }
+    .navbarBurgerButton:hover{
+        cursor: pointer;
+        position: fixed;
+        z-index: 12;
+    }
+    .burgerBar,
+    .burgerBar::before, 
+    .burgerBar::after{
+        display: block;
+        width: 40px;
+        height: 3px;
+        position: relative;
+        border-radius: 3px;
+        background: white; 
+    }
+    .burgerBar::before, 
+    .burgerBar::after{
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+    .burgerBar::before{
+        content: "";
+        transform: translateY(-12px);
+    }
+    .burgerBar::after{
+        content: "";
+        transform: translateY(12px);
+    }
+    .showNav .burgerBar{
+        transform: transparent;
+        width: 0;
+    }
+    .showNav .burgerBar::before {
+        transform: rotate(45deg);
+    }
+    .showNav .burgerBar::after{
+        transform: rotate(-45deg);
+    }
+}

@@ -1,0 +1,66 @@
+/* ===== FONTS ===== */
+
+@font-face {
+  font-family: 'Seagram';
+  src: url(./fonts/Enchanted\ Land.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Livings';
+  src: url(./fonts/Livingst.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto';
+  src: url(./fonts/Bitter-VariableFont_wght.ttf) format('truetype');
+}
+
+
+/* ===== RESET CSS ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto';
+}
+
+/* ===== GLOBAL CONTAINER */
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#backgroundVideo {
+  float: left;
+  position: fixed;
+}
+
+@media screen and (max-width: 1024px) {
+  #backgroundVideo {
+    display: none;
+  }
+  .container {
+    background-image: url(./assets/images/castleMobile.png);
+    background-size: cover;
+  }
+}
+
+/* ===== CLASS ===== */
+
+button {
+  width: 100px;
+  height: 50px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.slick-next {
+  display: none !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}
