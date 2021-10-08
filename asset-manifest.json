@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/HackatonWild/static/css/main.2da3d95a.chunk.css",
-    "main.js": "/HackatonWild/static/js/main.c3dc7ede.chunk.js",
-    "main.js.map": "/HackatonWild/static/js/main.c3dc7ede.chunk.js.map",
+    "main.js": "/HackatonWild/static/js/main.ccd51e36.chunk.js",
+    "main.js.map": "/HackatonWild/static/js/main.ccd51e36.chunk.js.map",
     "runtime-main.js": "/HackatonWild/static/js/runtime-main.468e4c0c.js",
     "runtime-main.js.map": "/HackatonWild/static/js/runtime-main.468e4c0c.js.map",
     "static/css/2.56db29be.chunk.css": "/HackatonWild/static/css/2.56db29be.chunk.css",
@@ -32,6 +32,6 @@
     "static/css/2.56db29be.chunk.css",
     "static/js/2.19004c07.chunk.js",
     "static/css/main.2da3d95a.chunk.css",
-    "static/js/main.c3dc7ede.chunk.js"
+    "static/js/main.ccd51e36.chunk.js"
   ]
 }
